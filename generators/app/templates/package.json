@@ -1,21 +1,18 @@
 {
-  "name": "generator-tdp-node",
+  "name": "blargh",
   "version": "1.0.0",
-  "description": "A simple Yeoman generator for my Node packages",
+  "description": "aaa",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neilstuartcraig/generator-tdp-node.git"
+    "url": "ggg"
   },
   "keywords": [
-    "Yeoman",
-    "Node",
-    "Ava",
-    "ESLint",
-    "Babel"
+    "a",
+    "b"
   ],
   "author": "Neil Craig <neil.craig@thedotproduct.org>",
   "license": "MIT",
@@ -24,9 +21,6 @@
   },
   "homepage": "https://github.com/neilstuartcraig/generator-tdp-node#readme",
   "dependencies": {
-    "yeoman-generator": "^0.24.1"
-  },
-  "files": [
-    "generators"
-  ]
+    "abcdef": "0.0.0"
+  }
 }
