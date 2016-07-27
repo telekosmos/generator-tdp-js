@@ -20,9 +20,10 @@ module.exports = generators.Base.extend(
 
   writing: function wFn()
   {
-console.log("CWD: " + process.cwd());
-console.log("sp: " + this.templatePath("package.json"));
-    //
-    this.fs.copy(this.templatePath("package.json"), "package.json");
+// console.log("aaCWD: " + process.cwd());
+// console.log("sp: " + this.templatePath("package.json"));
+
+    // copy all template files to cwd
+    this.fs.copy(this.templatePath("*"), ".");
   }
 });
