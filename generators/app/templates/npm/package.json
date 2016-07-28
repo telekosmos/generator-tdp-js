@@ -1,36 +1,37 @@
 {
-  "name": "<%= GTNOpts.appName %>",
-  "version": "<%= GTNOpts.version %>",
-  "description": "<%= GTNOpts.description %>",
-  "main": "index.js",
-  "scripts": {
-    "vuln-scan": "./node_modules/.bin/snyk test",
-    "lint": "node_modules/.bin/eslint ./*.js lib/*.js test/*.js",
-    "test": "node_modules/.bin/nyc node_modules/.bin/ava test/*.js",
-    "report": "./node_modules/.bin/nyc report --reporter=lcov --reporter=html && open coverage/index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/<%= GTNOpts.user.GHUsername %>/<%= GTNOpts.appName %>"
-  },
-  "keywords": [
-    "a",
-    "b"
-  ],
-  "author": "<%= GTNOpts.user.name %> <%= GTNOpts.user.email %>",
-  "license": "<%= GTNOpts.license %>",
-  "bugs": {
-    "url": "https://github.com/<%= GTNOpts.user.GHUsername %>/<%= GTNOpts.appName %>/issues"
-  },
-  "homepage": "https://github.com/<%= GTNOpts.user.GHUsername %>/<%= GTNOpts.appName %>#readme",
-  "dependencies": {
-  },
-  "devDependencies": {
-    "ava": "latest",
-    "eslint": "latest",
-    "eslint-plugin-ava": "latest",
-    "nyc": "latest",
-    "snyk": "latest",
-    "eslint-config-tdp": "latest"
-  }
+    "name": "<%= GTNOpts.appName %>",
+    "version": "<%= GTNOpts.version %>",
+    "description": "<%= GTNOpts.description %>",
+    "main": "index.js",
+    "scripts": {
+        "post-install": "./scripts/post-install.js",
+        "vuln-scan": "./node_modules/.bin/snyk test",
+        "lint": "node_modules/.bin/eslint ./*.js lib/*.js test/*.js",
+        "test": "node_modules/.bin/nyc node_modules/.bin/ava test/*.js",
+        "report": "./node_modules/.bin/nyc report --reporter=lcov --reporter=html && open coverage/index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/<%= GTNOpts.user.GHUsername %>/<%= GTNOpts.appName %>"
+    },
+    "keywords": [
+        "a",
+        "b"
+    ],
+    "author": "<%= GTNOpts.user.name %> <%= GTNOpts.user.email %>",
+    "license": "<%= GTNOpts.license %>",
+    "bugs": {
+        "url": "https://github.com/<%= GTNOpts.user.GHUsername %>/<%= GTNOpts.appName %>/issues"
+    },
+    "homepage": "https://github.com/<%= GTNOpts.user.GHUsername %>/<%= GTNOpts.appName %>#readme",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "ava": "latest",
+        "eslint": "latest",
+        "eslint-plugin-ava": "latest",
+        "nyc": "latest",
+        "snyk": "latest",
+        "eslint-config-tdp": "latest"
+    }
 }
