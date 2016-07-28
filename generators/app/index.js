@@ -229,10 +229,10 @@ TODO: split this up into a less horrendous chunk of crap
     this.template(this.templatePath("node/index.js"), "index.js");
 
     // eslintrc
-    // TODO: link it to shareable eslint package
+    this.template(this.templatePath("linters/.eslintrc"), ".eslintrc");
 
     // babelrc
-    // TODO: link it to shareable babel preset
+    this.template(this.templatePath("transpilers/.babelrc"), ".babelrc");
 
     // installDependencies
     // this.installDependencies(
