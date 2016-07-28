@@ -4,6 +4,7 @@
     "description": "<%= GTNOpts.description %>",
     "main": "index.js",
     "scripts": {
+        "start": "node .",
         "post-install": "./scripts/post-install.js",
         "vuln-scan": "./node_modules/.bin/snyk test",
         "lint": "node_modules/.bin/eslint ./*.js lib/*.js test/*.js",
@@ -30,6 +31,7 @@
         "ava": "latest",
         "eslint": "latest",
         "eslint-plugin-ava": "latest",
+        "eslint-plugin-react": "latest",
         "nyc": "latest",
         "snyk": "latest",
         "eslint-config-tdp": "latest"

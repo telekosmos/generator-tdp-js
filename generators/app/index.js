@@ -240,6 +240,7 @@ TODO: split this up into a less horrendous chunk of crap
 
     // postinstall script
     this.template(this.templatePath("node/scripts/post-install.js"), "scripts/post-install.js");
+    fs.chmodSync("scripts/post-install.js", "770");
 
     // .gitignore
     this.template(this.templatePath("source-control/.gitignore"), ".gitignore");
@@ -254,12 +255,12 @@ TODO: split this up into a less horrendous chunk of crap
     this.template(this.templatePath("transpilers/.babelrc"), ".babelrc");
 
     // installDependencies
-    // this.installDependencies(
-    //     {
-    //         "npm": true,
-    //         "bower": false,
-    //         "skipMessage": false
-    //     });
+    this.installDependencies(
+    {
+        "npm": true,
+        "bower": false,
+        "skipMessage": false
+    });
 
   }
 });
