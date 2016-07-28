@@ -235,11 +235,11 @@ TODO: split this up into a less horrendous chunk of crap
     this.template(this.templatePath("node/app-lib.js"), "lib/" + this.GTNOpts.appLibFilename);
 
     // config dir
-    this.template(this.templatePath("node/config/app-config.js"), "lib/" + this.GTNOpts.appConfigFilename);
-    this.template(this.templatePath("node/config/app-config.js"), "lib/" + this.GTNOpts.appConfigTemplateFilename);
+    this.template(this.templatePath("node/config/app-config.js"), "config/" + this.GTNOpts.appConfigFilename);
+    this.template(this.templatePath("node/config/app-config.js"), "config/" + this.GTNOpts.appConfigTemplateFilename);
 
     // postinstall script
-    this.template(this.templatePath("node/scripts/post-install"), "scripts/post-install.js");
+    this.template(this.templatePath("node/scripts/post-install.js"), "scripts/post-install.js");
 
     // .gitignore
     this.template(this.templatePath("source-control/.gitignore"), ".gitignore");
