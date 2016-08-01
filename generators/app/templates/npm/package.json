@@ -9,7 +9,8 @@
         "vuln-scan": "./node_modules/.bin/snyk test",
         "lint": "node_modules/.bin/eslint ./*.js lib/*.js test/*.js",
         "test": "node_modules/.bin/nyc node_modules/.bin/ava test/*.js",
-        "report": "./node_modules/.bin/nyc report --reporter=lcov --reporter=html && open coverage/index.html"
+        "report": "./node_modules/.bin/nyc report --reporter=lcov --reporter=html && open coverage/index.html",
+        "build": "babel ./*.js lib/*.js --out-dir dist"
     },
     "repository": {
         "type": "git",
@@ -34,6 +35,12 @@
         "eslint-plugin-react": "latest",
         "nyc": "latest",
         "snyk": "latest",
-        "eslint-config-tdp": "latest"
+        "eslint-config-tdp": "latest",
+        "babel": "latest",
+        "babel-cli": "latest",
+        "babel-preset-es2015": "latest",
+        "babel-preset-react": "latest",
+        "babel-plugin-syntax-flow": "latest",
+        "babel-plugin-transform-flow-strip-types": "latest"
     }
 }
