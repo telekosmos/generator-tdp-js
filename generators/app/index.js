@@ -251,8 +251,9 @@ TODO: split this up into a less horrendous chunk of crap
     // eslintrc
     this.template(this.templatePath("linters/.eslintrc"), ".eslintrc");
 
-    // babelrc
+    // babelrc & lang file (for atom plugin)
     this.template(this.templatePath("transpilers/.babelrc"), ".babelrc");
+    this.template(this.templatePath("transpilers/.languagebabel"), ".languagebabel");
 
     // installDependencies
     this.installDependencies(
