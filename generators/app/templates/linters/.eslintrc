@@ -3,7 +3,8 @@
     [
         "tdp/node",
         "tdp/react",
-        "tdp/ava"
+        "tdp/ava",
+        "tdp/flow-types"
     ],
     "plugins":
     [
