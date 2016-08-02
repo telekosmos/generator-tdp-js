@@ -16,10 +16,6 @@ module.exports = generators.Base.extend(
   constructor: function constructorFn()
   {
     generators.Base.apply(this, arguments);
-
-    // this.templatePath("templates");
-
-    // template(source, destination, data, options)
   },
 
 
@@ -255,13 +251,34 @@ TODO: split this up into a less horrendous chunk of crap
     this.template(this.templatePath("transpilers/.babelrc"), ".babelrc");
     this.template(this.templatePath("transpilers/.languagebabel"), ".languagebabel");
 
-    // installDependencies
-    this.installDependencies(
-    {
-        "npm": true,
-        "bower": false,
-        "skipMessage": false
-    });
+
+    // TODO: this should come from config
+    const NPMDeps =
+    [
+        "react",
+        "react-dom"
+    ];
+
+    this.npmInstall(NPMDevDeps, { 'save': true });
+
+    const NPMDevDeps =
+    [
+        "ava":,
+        "eslint",
+        "eslint-plugin-ava",
+        "eslint-plugin-react",
+        "nyc",
+        "snyk",
+        "eslint-config-tdp",
+        "babel",
+        "babel-cli",
+        "babel-preset-es2015",
+        "babel-preset-react",
+        "babel-plugin-syntax-flow",
+        "babel-plugin-transform-flow-strip-types"
+    ];
+
+    this.npmInstall(NPMDevDeps, { 'saveDev': true });
 
   }
 });

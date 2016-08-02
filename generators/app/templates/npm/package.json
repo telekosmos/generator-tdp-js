@@ -29,18 +29,5 @@
     "dependencies": {
     },
     "devDependencies": {
-        "ava": "latest",
-        "eslint": "latest",
-        "eslint-plugin-ava": "latest",
-        "eslint-plugin-react": "latest",
-        "nyc": "latest",
-        "snyk": "latest",
-        "eslint-config-tdp": "latest",
-        "babel": "latest",
-        "babel-cli": "latest",
-        "babel-preset-es2015": "latest",
-        "babel-preset-react": "latest",
-        "babel-plugin-syntax-flow": "latest",
-        "babel-plugin-transform-flow-strip-types": "latest"
     }
 }
