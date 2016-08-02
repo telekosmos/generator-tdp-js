@@ -4,9 +4,10 @@
 import test from "ava";
 
 // Local deps
-import {XXXXXX} from "../lib/<%= GTNOpts.appLibFilename %>";
+import lib from "../dist/lib/<%= GTNOpts.appLibFilename %>";
 
-test("XXXXXX with valid inputs (1)", (t) =>
+test("lib.test() with valid inputs (1)", (t) =>
 {
-    t.is("a", "b", "a must equal b");
+    let res = lib.test("a");
+    t.is(res, "b", "a must equal b");
 });
