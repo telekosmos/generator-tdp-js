@@ -228,7 +228,7 @@ TODO: split this up into a less horrendous chunk of crap
         this.template(this.templatePath("test/ava.js"), "test/a.js");
 
         // lib dir (automatically created) & file
-        this.template(this.templatePath("node/app-lib.js"), "src/lib/" + this.GTNOpts.appLibFilename);
+        this.template(this.templatePath("node/lib/app-lib.js"), "src/lib/" + this.GTNOpts.appLibFilename);
 
         // config dir
         this.template(this.templatePath("node/config/app-config.js"), "config/" + this.GTNOpts.appConfigFilename);
