@@ -268,10 +268,6 @@ TODO: split this up into a less horrendous chunk of crap
         const NPMDevDeps =
         [
             "ava",
-            "eslint",
-            "eslint-plugin-ava",
-            "eslint-plugin-react",
-            "eslint-plugin-babel",
             "nyc",
             "snyk",
             "eslint-config-tdp",
