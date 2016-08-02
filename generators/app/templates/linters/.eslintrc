@@ -4,5 +4,9 @@
         "tdp/node",
         "tdp/react",
         "tdp/ava"
+    ],
+    "plugins":
+    [
+        "babel"
     ]
 }

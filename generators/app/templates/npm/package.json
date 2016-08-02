@@ -2,7 +2,7 @@
     "name": "<%= GTNOpts.appName %>",
     "version": "<%= GTNOpts.version %>",
     "description": "<%= GTNOpts.description %>",
-    "main": "index.js",
+    "main": "dist/index.js",
     "scripts": {
         "start": "node .",
         "post-install": "./scripts/post-install.js",
@@ -10,15 +10,13 @@
         "lint": "node_modules/.bin/eslint ./*.js lib/*.js test/*.js",
         "test": "node_modules/.bin/nyc node_modules/.bin/ava test/*.js",
         "report": "./node_modules/.bin/nyc report --reporter=lcov --reporter=html && open coverage/index.html",
-        "build": "babel ./*.js lib/*.js --out-dir dist"
+        "build": "./node_modules/babel-cli/bin/babel.js src/ --out-dir dist"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/<%= GTNOpts.user.GHUsername %>/<%= GTNOpts.appName %>"
     },
     "keywords": [
-        "a",
-        "b"
     ],
     "author": "<%= GTNOpts.user.name %> <%= GTNOpts.user.email %>",
     "license": "<%= GTNOpts.license %>",
