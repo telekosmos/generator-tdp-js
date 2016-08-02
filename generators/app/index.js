@@ -276,7 +276,7 @@ TODO: split this up into a less horrendous chunk of crap
             "babel-preset-es2015",
             "babel-preset-react",
             "babel-plugin-syntax-flow",
-            "babel-plugin-transform-flow-strip-types"
+            "babel-plugin-transform-flow-strip-types",
             "babel-plugin-typecheck"
         ];
 
