@@ -273,7 +273,7 @@ TODO: split this up into a less horrendous chunk of crap
             "eslint-config-tdp",
             "babel-cli",
             "babel-eslint",
-            "babel-preset-es2015",
+            "babel-preset-es2015-node6",
             "babel-preset-react",
             "babel-plugin-syntax-flow",
             "babel-plugin-transform-flow-strip-types",
