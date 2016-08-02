@@ -235,8 +235,8 @@ TODO: split this up into a less horrendous chunk of crap
     this.template(this.templatePath("node/config/app-config.js"), "config/" + this.GTNOpts.appConfigTemplateFilename);
 
     // postinstall script
-    this.template(this.templatePath("node/scripts/post-install.js"), "scripts/post-install.js");
-    fs.chmodSync("scripts/post-install.js", "770");
+    this.template(this.templatePath("npm/scripts/post-install.js"), "scripts/post-install.js");
+    // fs.chmodSync("scripts/post-install.js", "770");
 
     // .gitignore
     this.template(this.templatePath("source-control/.gitignore"), ".gitignore");
@@ -259,11 +259,11 @@ TODO: split this up into a less horrendous chunk of crap
         "react-dom"
     ];
 
-    this.npmInstall(NPMDevDeps, { 'save': true });
+    this.npmInstall(NPMDeps, { 'save': true });
 
     const NPMDevDeps =
     [
-        "ava":,
+        "ava",
         "eslint",
         "eslint-plugin-ava",
         "eslint-plugin-react",

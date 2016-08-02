@@ -2,5 +2,5 @@
 
 module.exports =
 {
-    
+    testArg: "example arg"
 };

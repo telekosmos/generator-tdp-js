@@ -1,11 +1,11 @@
 "use strict";
 
-function a()
+function test(arg)
 {
-
+    return "Arg is: " + arg;
 }
 
 module.exports =
 {
-    a: a
+    test: test
 };
