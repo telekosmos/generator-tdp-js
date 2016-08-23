@@ -243,8 +243,9 @@ TODO: split this up into a less horrendous chunk of crap
         // index
         this.template(this.templatePath("node/index.js"), "src/index.js");
 
-        // eslintrc
+        // eslintrc & ignore
         this.template(this.templatePath("linters/.eslintrc"), ".eslintrc");
+        this.template(this.templatePath("linters/.eslintignore"), ".eslintignore");
 
         // babelrc & lang file (for atom plugin)
         this.template(this.templatePath("transpilers/.babelrc"), ".babelrc");
