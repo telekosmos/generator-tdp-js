@@ -1,5 +1,8 @@
 # generator-tdp-node changelog
 
+## v1.1.1
+* Add license file
+
 ## v1.1.0
 * Add `.eslintignore`
 * Add readme content
