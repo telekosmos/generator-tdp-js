@@ -14,8 +14,8 @@
         "build": "./node_modules/babel-cli/bin/babel.js src/ --out-dir dist",
         "post-install": "./scripts/post-install.js",
         "preversion": "npm run build && npm test && npm run create-report",
-        "version": "git add -A",
-        "postversion": "git push && git push --tags && npm run show-report"
+        "version": "npm run vuln-scan && git add -A",
+        "postversion": "git push --follow-tags && npm publish && npm run show-report"
     },
     "repository": {
         "type": "git",
