@@ -4,13 +4,18 @@
     "description": "<%= GTNOpts.description %>",
     "main": "dist/index.js",
     "scripts": {
-        "start": "node .",
-        "post-install": "./scripts/post-install.js",
+        "start": "node .",        
         "vuln-scan": "./node_modules/.bin/snyk test",
         "lint": "node_modules/.bin/eslint ./*.js lib/*.js test/*.js",
         "test": "node_modules/.bin/nyc node_modules/.bin/ava test/*.js",
-        "report": "./node_modules/.bin/nyc report --reporter=lcov --reporter=html && open coverage/index.html",
-        "build": "./node_modules/babel-cli/bin/babel.js src/ --out-dir dist"
+        "create-report": "./node_modules/.bin/nyc report --reporter=lcov --reporter=html",
+        "show-report": "open coverage/index.html",
+        "report": "npm run create-report && npm run show-report",
+        "build": "./node_modules/babel-cli/bin/babel.js src/ --out-dir dist",
+        "post-install": "./scripts/post-install.js",
+        "preversion": "npm run build && npm test && npm run create-report",
+        "version": "git add -A",
+        "postversion": "git push && git push --tags && npm run show-report"
     },
     "repository": {
         "type": "git",
