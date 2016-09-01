@@ -1,5 +1,8 @@
 # generator-tdp-node changelog
 
+## v1.4.1
+* Fix NPM deps install order
+
 ## v1.4.0
 * Add "react" option (boolean) and adjust NPM deps accordingly
 * Correct a couple of single quotes to be double quotes to fit my eslint rules

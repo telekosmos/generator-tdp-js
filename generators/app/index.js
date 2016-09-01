@@ -259,8 +259,6 @@ TODO: split this up into a less horrendous chunk of crap
         // Runtime deps
         let NPMDeps = [];
 
-        this.npmInstall(NPMDeps, { "save": true });
-
         // Development deps
         let NPMDevDeps =
         [
@@ -293,6 +291,7 @@ TODO: split this up into a less horrendous chunk of crap
           NPMDevDeps.push("babel-preset-react");
         }
 
+        this.npmInstall(NPMDeps, { "save": true });
         this.npmInstall(NPMDevDeps, { "saveDev": true });
     }
 });
