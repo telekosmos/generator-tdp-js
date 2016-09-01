@@ -1,5 +1,9 @@
 # generator-tdp-node changelog
 
+## v1.4.0
+* Add "react" option (boolean) and adjust NPM deps accordingly
+* Correct a couple of single quotes to be double quotes to fit my eslint rules
+
 ## v1.3.0
 * Add npm publish to npm postversion
 * Add snyk to npm version

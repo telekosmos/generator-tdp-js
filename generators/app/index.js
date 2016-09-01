@@ -257,16 +257,12 @@ TODO: split this up into a less horrendous chunk of crap
         // TODO: this should come from config
 
         // Runtime deps
-        const NPMDeps =
-        [
-            "react",
-            "react-dom"
-        ];
+        let NPMDeps = [];
 
-        this.npmInstall(NPMDeps, { 'save': true });
+        this.npmInstall(NPMDeps, { "save": true });
 
         // Development deps
-        const NPMDevDeps =
+        let NPMDevDeps =
         [
             "ava",
             "nyc",
@@ -275,12 +271,28 @@ TODO: split this up into a less horrendous chunk of crap
             "babel-cli",
             "babel-eslint",
             "babel-preset-es2015-node6",
-            "babel-preset-react",
             "babel-plugin-syntax-flow",
             "babel-plugin-transform-flow-strip-types",
             "babel-plugin-typecheck"
         ];
 
-        this.npmInstall(NPMDevDeps, { 'saveDev': true });
+        // React options
+        this.option("react",
+        {
+            alias: "r",
+            type: Boolean,
+            optional: true,
+            defaults: false
+        });
+
+        if(this.options.react === true)
+        {
+          NPMDeps.push("react");
+          NPMDeps.push("react-dom");
+
+          NPMDevDeps.push("babel-preset-react");
+        }
+
+        this.npmInstall(NPMDevDeps, { "saveDev": true });
     }
 });
