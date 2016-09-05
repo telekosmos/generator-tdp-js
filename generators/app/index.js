@@ -37,7 +37,7 @@ TODO: split this up into a less horrendous chunk of crap
             alias: "n",
             type: String,
             optional: true,
-            defaults: this.appname
+            defaults: this.appname.replace(/\ /g, "-")
         });
 
         // TODO: ideally, this would ensure that the appName is valid as per NPM rules/best practice (lower case, hyphens)
@@ -223,9 +223,6 @@ TODO: split this up into a less horrendous chunk of crap
         // deps / package.json
         // TODO: override for defaults?
         this.template(this.templatePath("npm/package.json"), "package.json");
-
-        // test dir (automatically created) & file
-        this.template(this.templatePath("test/ava.js"), "test/a.js");
 
         // lib dir (automatically created) & file
         this.template(this.templatePath("node/lib/app-lib.js"), "src/lib/" + this.GTNOpts.appLibFilename);

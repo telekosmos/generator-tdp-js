@@ -1,5 +1,10 @@
 # generator-tdp-node changelog
 
+## v1.5.0
+* Add :tests generator to create AVA test files for all exported functions in a lib/module
+* Remove test generator from default generator
+* Fix bug in appname wherein hyphens are replaced with spaces
+
 ## v1.4.1
 * Fix NPM deps install order
 
