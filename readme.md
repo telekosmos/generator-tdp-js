@@ -30,10 +30,10 @@ This generator will make some major assumptions (which work for me):
 
 There are a few options you can opt in/out from when generating your :
 
-* `--description "<String>"`: a description to use in the `package.json` file
-* `--license "<String>"`: a license to use, 
-* `--react <Boolean>`: whether you want to install [React](https://facebook.github.io/react/) and [React-DOM](https://www.npmjs.com/package/react-dom) (for e.g. server-side rendering) along with the [React ESLint plugin](https://www.npmjs.com/package/eslint-plugin-react)
-
+* `--description "<String: null>"`: a description to use in the `package.json` file
+* `--license "<String" MIT>"`: a license to use, 
+* `--react <Boolean: false>`: whether you want to install [React](https://facebook.github.io/react/) and [React-DOM](https://www.npmjs.com/package/react-dom) (for e.g. server-side rendering) along with the [React ESLint plugin](https://www.npmjs.com/package/eslint-plugin-react)
+* `--version <SemVer: 1.0.0>`: the version number you want to start at
 
 Then it will configure/install the following, customised to use the containing directory name as the project name:
 

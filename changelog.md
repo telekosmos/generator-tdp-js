@@ -1,5 +1,8 @@
 # generator-tdp-js changelog
 
+## v1.5.2
+* Add remaining options to docs
+
 ## v1.5.1
 * Remove unnecessary test template
 * Correct typos
