@@ -1,4 +1,4 @@
-# generator-tdp-node changelog
+# generator-tdp-js changelog
 
 ## v1.5.1
 * Remove unnecessary test template

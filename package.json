@@ -1,14 +1,14 @@
 {
-  "name": "generator-tdp-node",
+  "name": "generator-tdp-js",
   "version": "1.5.1",
-  "description": "A simple Yeoman generator for my Node packages",
+  "description": "A simple Yeoman generator for my JS projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neilstuartcraig/generator-tdp-node.git"
+    "url": "git+https://github.com/neilstuartcraig/generator-tdp-js.git"
   },
   "keywords": [
     "Yeoman",
@@ -20,9 +20,9 @@
   "author": "Neil Craig <neil.craig@thedotproduct.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/neilstuartcraig/generator-tdp-node/issues"
+    "url": "https://github.com/neilstuartcraig/generator-tdp-js/issues"
   },
-  "homepage": "https://github.com/neilstuartcraig/generator-tdp-node#readme",
+  "homepage": "https://github.com/neilstuartcraig/generator-tdp-js#readme",
   "dependencies": {
     "yeoman-generator": "^0.24.1"
   },

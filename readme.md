@@ -1,11 +1,11 @@
-# generator-tdp-node
+# generator-tdp-js
 
 ## Overview
 A simple [Yeoman](http://yeoman.io/) generator which is probably pretty specific to me (or you might call it "optinionated"), though you're of course *very* welcome to [use it](http://yeoman.io/learning/index.html) if it works for you.
 
 
 ## Installation
-See the [Yeoman getting started guide](http://yeoman.io/learning/index.html). The NPM package name of this generator is `generator-tdp-node`.
+See the [Yeoman getting started guide](http://yeoman.io/learning/index.html). The NPM package name of this generator is `generator-tdp-js`.
 
 
 ## Usage
