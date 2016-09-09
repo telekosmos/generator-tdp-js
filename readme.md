@@ -67,6 +67,7 @@ It currently does not create a Github project repo (but maybe will do in the fut
 * Automate all the things! (in a way which suits my dev flow/style)
 * Use as few direct dependencies as possible
 * Use as simple a build chain as possible (no Grunt, Gulp etc.)
+* No global NPM installs required for project specifics - i.e. babel, eslint, snyk etc. are installed and run locally
 
 
 ## Prerequisites

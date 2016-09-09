@@ -1,5 +1,8 @@
 # generator-tdp-js changelog
 
+## v1.5.3
+* Docs additions
+
 ## v1.5.2
 * Add remaining options to docs
 
