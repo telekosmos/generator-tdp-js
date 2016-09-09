@@ -1,7 +1,7 @@
 "use strict";
 
 /*
-Super simple Yeoman generrator to set up a Node NPM package
+Super simple Yeoman generator to set up a Node NPM package
 */
 
 // Core deps

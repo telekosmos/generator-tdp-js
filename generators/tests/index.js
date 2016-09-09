@@ -1,7 +1,7 @@
 "use strict";
 
 /*
-Yeoman generrator to read a lib/module and create test files for all exported functions
+Yeoman generator to read a lib/module and create test files for all exported functions
 */
 
 // Core deps

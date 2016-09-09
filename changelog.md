@@ -1,5 +1,10 @@
 # generator-tdp-node changelog
 
+## v1.5.1
+* Remove unnecessary test template
+* Correct typos
+* Add more info on what this generator does to the readme.md
+
 ## v1.5.0
 * Add :tests generator to create AVA test files for all exported functions in a lib/module
 * Remove test generator from default generator
