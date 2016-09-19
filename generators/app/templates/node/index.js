@@ -8,5 +8,5 @@ const lib = require("./lib/<%= GTNOpts.appLibFilename %>"); // NOTE: Path is rel
 
 //...simple tests
 let arg = config.testArg;
-let ret = lib.test(arg);
+let ret = lib.test1(arg);
 console.log("Hello! test('" + arg + "') returns " + ret);

@@ -1,5 +1,9 @@
 # generator-tdp-js changelog
 
+## v1.5.4
+* Fix broken lib example functions (WRT tests)
+
+
 ## v1.5.3
 * Docs additions
 
