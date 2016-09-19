@@ -3,6 +3,9 @@
     "version": "<%= GTNOpts.version %>",
     "description": "<%= GTNOpts.description %>",
     "main": "dist/index.js",
+    "config": {
+        "force": true
+    },
     "scripts": {
         "start": "node .",        
         "vuln-scan": "./node_modules/.bin/snyk test",
@@ -15,7 +18,7 @@
         "post-install": "./scripts/post-install.js",
         "preversion": "npm run build && npm test && npm run create-report",
         "version": "npm run vuln-scan && git add -A",
-        "postversion": "git push --follow-tags && npm publish && npm run show-report"
+        "postversion": "git push --follow-tags && npm publish"
     },
     "repository": {
         "type": "git",

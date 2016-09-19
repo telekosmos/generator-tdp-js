@@ -1,8 +1,10 @@
 # generator-tdp-js changelog
 
+## v1.5.5
+* Add NPM config to package.json for "force" (to be used in `npm version`)
+
 ## v1.5.4
 * Fix broken lib example functions (WRT tests)
-
 
 ## v1.5.3
 * Docs additions
