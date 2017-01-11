@@ -235,7 +235,7 @@ TODO: split this up into a less horrendous chunk of crap
         this.template(this.templatePath("npm/scripts/post-install.js"), "scripts/post-install.js");
 
         // .gitignore
-        this.template(this.templatePath("source-control/.gitignore"), ".gitignore");
+        this.template(this.templatePath("source-control/gitignore"), ".gitignore");
 
         // index
         this.template(this.templatePath("node/index.js"), "src/index.js");

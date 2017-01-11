@@ -1,5 +1,8 @@
 # generator-tdp-js changelog
 
+## v1.5.6
+* Move `app/source-countrol/.gitignore` to `app/source-countrol/gitignore` as it doens't get depoyed curently (has probably always failed :-()
+
 ## v1.5.5
 * Add NPM config to package.json for "force" (to be used in `npm version`)
 
