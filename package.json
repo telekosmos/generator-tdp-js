@@ -1,6 +1,6 @@
 {
   "name": "generator-tdp-js",
-  "version": "1.5.6",
+  "version": "1.6.0",
   "description": "A simple Yeoman generator for my JS projects",
   "main": "index.js",
   "scripts": {

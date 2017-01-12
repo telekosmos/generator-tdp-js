@@ -6,6 +6,12 @@
     "config": {
         "force": true
     },
+    "ava": {
+        "require": [
+            "babel-register"
+        ],
+        "babel": "inherit"
+    },
     "scripts": {
         "start": "node .",        
         "vuln-scan": "./node_modules/.bin/snyk test",

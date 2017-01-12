@@ -1,5 +1,8 @@
 # generator-tdp-js changelog
 
+## v1.6.0
+* Add ava babel config to package.json to allow ava to test files which use e.g. ES6 imports
+
 ## v1.5.6
 * Move `app/source-countrol/.gitignore` to `app/source-countrol/gitignore` as it doens't get depoyed curently (has probably always failed :-()
 
