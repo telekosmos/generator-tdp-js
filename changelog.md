@@ -1,5 +1,8 @@
 # generator-tdp-js changelog
 
+## v1.6.2
+* Fix: Change test template to use path to lib file in `src/` (rather than `dest/`) so that we don't try to test transpiled functions and error outputs make sense
+
 ## v1.6.1
 * Fix: Change tests generator path to `dist/` (from `src/`) to allow Babel to transpile the lib and thus allow e.g. `import`
 

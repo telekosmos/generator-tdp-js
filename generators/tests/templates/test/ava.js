@@ -8,7 +8,7 @@ Unit tests for function <%= GTNOpts.functionName %>
 import test from "ava";
 
 // Local deps
-import {<%= GTNOpts.functionName %>} from "../dist/lib/<%= GTNOpts.appLibFilename %>";
+import {<%= GTNOpts.functionName %>} from "../src/lib/<%= GTNOpts.appLibFilename %>";
 
 
 <%
