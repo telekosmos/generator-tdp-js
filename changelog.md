@@ -1,5 +1,8 @@
 # generator-tdp-js changelog
 
+## v1.6.1
+* Fix: Change tests generator path to `dist/` (from `src/`) to allow Babel to transpile the lib and thus allow e.g. `import`
+
 ## v1.6.0
 * Add ava babel config to package.json to allow ava to test files which use e.g. ES6 imports
 

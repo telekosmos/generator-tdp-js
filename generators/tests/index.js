@@ -69,7 +69,7 @@ module.exports = generators.Base.extend(
           alias: "l",
           type: String,
           optional: true,
-          defaults: process.cwd() + "/src/lib/" + this.GTNOpts.appName + "-lib.js" // TODO: Make this less fugly
+          defaults: process.cwd() + "/dist/lib/" + this.GTNOpts.appName + "-lib.js" // TODO: Make this less fugly
       });
 
       this.option("functions",
