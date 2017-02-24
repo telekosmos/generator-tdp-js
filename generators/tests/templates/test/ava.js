@@ -39,7 +39,7 @@ var argSting = GTNOpts.functionArgs.join(", ");
   var argName = GTNOpts.functionArgs[i];
 
   // NOTE: Using 123 as the value because output is HTML escaped and thus " etc get mangled. It'll need editing anyway...
-  var str = "let " + argName + " = 123;";%>
+  var str = "const " + argName + " = 123;";%>
   <%= str %><%
 }
   if(fnIsAsync === true)
@@ -86,23 +86,25 @@ for(var j = 0; j < GTNOpts.functionArgs.length; j++)
     }
 
     // NOTE: Using 123 as the value because output is HTML escaped and thus " etc get mangled. It'll need editing anyway...
-    var str = "let " + argName + " = " + val + ";";%>
+    var str = "const " + argName + " = " + val + ";";%>
   <%= str %><%
   }
   %>
     <% if(fnIsAsync === true)
     {
+      const error = t.throws(() => 
+      {
     %>
   <%= GTNOpts.functionName %>(<%= argSting %>, (err, res) =>
-  {
-    t.is(err === null, true, "'err' must be null");
-    t.is(res instanceof Object, true, "'res' must be an object"); // NOTE: You'll probably need to change this
-
-    t.end();
-  });<%}
+    {
+    });
+  }, TypeError);
+  t.is(error instanceof TypeError, true, "A TypeError must be thrown");
+  t.end();  
+  <%}
   else{
   %>
-  let res = <%= GTNOpts.functionName %>(<%= argSting %>);
+  const res = <%= GTNOpts.functionName %>(<%= argSting %>);
   t.is(res, "b", "a must equal b");<%
   }%>
 });<%}%>

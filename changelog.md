@@ -1,5 +1,9 @@
 # generator-tdp-js changelog
 
+## v1.6.3
+* Fix: const instead of let in test files
+* Fix: test arg data type checks - use proper ava syntax
+
 ## v1.6.2
 * Fix: Change test template to use path to lib file in `src/` (rather than `dest/`) so that we don't try to test transpiled functions and error outputs make sense
 
