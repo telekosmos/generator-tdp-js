@@ -265,10 +265,13 @@ TODO: split this up into a less horrendous chunk of crap
             "eslint-config-tdp",
             "babel-cli",
             "babel-eslint",
-            "babel-preset-es2015-node6",
+						"babel-preset-env",
+						"babel-plugin-external-helpers",
             "babel-plugin-syntax-flow",
             "babel-plugin-transform-flow-strip-types",
-            "babel-plugin-typecheck"
+						"babel-plugin-typecheck",
+						"rollup",
+						"rollup-plugin-babel"
         ];
 
         // React options
